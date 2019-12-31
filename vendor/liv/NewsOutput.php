@@ -6,22 +6,13 @@ use PDO;
 
 class NewsOutput
 {
+    public $news;
     public function __construct()
     {
         $bd = new ConectDB('postnews', 'root', ''); # database connection
         
         $query = "SELECT * FROM `news`";
-        $news  = $bd->pdo->query($query);
-
-        try {
-            while($postNews = $news->fetch()){
-                echo $postNews['name'].'<br>';
-                echo $postNews['description'].'<br>';
-            }
-        } catch (PDOException $e) {
-            echo 'Ошибка вывода новостей: '.$e->getMessage();
-        }
+        $this->news  = $bd->pdo->query($query);
         
-         
     }
 }
