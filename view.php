@@ -8,9 +8,9 @@
 </head>
 <body>
     <form action="index.php">
-    <strong>Добавление новости</strong><br>
-    <p>Название новости: <input type="text" name="nameNews"></p><br>
-    <p>Описание новости: <br><textarea name="description" cols="30" rows="10"></textarea></p><br>
+    <h1>Добавление новости</h1>
+    <h3>Название новости: <br><input type="text" name="nameNews"></h3>
+    <h3>Описание новости: <br><textarea name="description" cols="30" rows="10"></textarea></h3><br>
     <button name="addNews">Добавить новость</button>
     </form>
     <h1>Список новостей</h1>
