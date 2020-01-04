@@ -12,10 +12,10 @@ if (isset($_REQUEST['addNews'])) {
         if (!empty($_REQUEST['description'])) {
             new SetNews();
         }else {
-            echo 'Зполните поле с описанием.';
+            echo 'Заполните поле с описанием.';
         }
     }else {
-        echo 'Зполните поле с названием.';
+        echo 'Заполните поле с названием.';
     }
      
 
